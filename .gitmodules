@@ -18,4 +18,4 @@
   url = https://github.com/tpope/vim-fugitive.git
 [submodule ".vim/bundle/vim-sneak"]
 	path = .vim/bundle/vim-sneak
-	url = git://github.com/justinmk/vim-sneak.git
+	url = https://github.com/justinmk/vim-sneak.git
