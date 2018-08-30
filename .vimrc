@@ -3,6 +3,10 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+"vim-sneak
+let g:sneak#s_next = 1
+let g:sneak#label = 1
+
 "solarized colorscheme
 set background=dark
 let g:solarized_termcolors=256
