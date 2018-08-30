@@ -3,6 +3,8 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+let mapleader = ","
+
 "vim-sneak
 let g:sneak#s_next = 1
 let g:sneak#label = 1
