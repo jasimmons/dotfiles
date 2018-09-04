@@ -5,7 +5,7 @@ VIMBUNDLE=$(VIM)/bundle
 all: vim
 
 vim:
-	git pull --recurse-submodules
+	git submodule update --init || git pull --recurse-submodules
 	mkdir -p ~/$(VIMBUNDLE) ~/$(VIMAUTOLOAD)
 	cp $(VIMAUTOLOAD)/pathogen.vim ~/$(VIMAUTOLOAD)/
 	(cd $(VIMBUNDLE) && cp -fR * ~/$(VIMBUNDLE))
