@@ -5,8 +5,13 @@ VIMBUNDLE=$(VIM)/bundle
 all: vim
 
 vim:
-	git submodule update --init || git pull --recurse-submodules
 	mkdir -p ~/$(VIMBUNDLE) ~/$(VIMAUTOLOAD)
 	cp $(VIMAUTOLOAD)/pathogen.vim ~/$(VIMAUTOLOAD)/
-	(cd $(VIMBUNDLE) && cp -fR * ~/$(VIMBUNDLE))
 	cp .vimrc ~/.vimrc
+	git clone https://github.com/altercation/vim-colors-solarized.git ~/$(VIMBUNDLE)/vim-colors-solarized
+	git clone https://github.com/fatih/vim-go.git ~/$(VIMBUNDLE)/vim-go
+	git clone https://github.com/justinmk/vim-sneak.git ~/$(VIMBUNDLE)/vim-sneak
+	git clone https://github.com/scrooloose/nerdtree.git ~/$(VIMBUNDLE)/nerdtree
+	git clone https://github.com/scrooloose/nerdcommenter.git ~/$(VIMBUNDLE)/nerdcommenter
+	git clone https://github.com/scrooloose/syntastic.git ~/$(VIMBUNDLE)/syntastic
+	git clone https://github.com/tpope/vim-fugitive.git ~/$(VIMBUNDLE)/vim-fugitive
