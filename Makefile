@@ -15,3 +15,4 @@ vim:
 	git clone https://github.com/scrooloose/nerdcommenter.git ~/$(VIMBUNDLE)/nerdcommenter
 	git clone https://github.com/scrooloose/syntastic.git ~/$(VIMBUNDLE)/syntastic
 	git clone https://github.com/tpope/vim-fugitive.git ~/$(VIMBUNDLE)/vim-fugitive
+	git clone https://github.com/gabrielelana/vim-markdown.git ~/$(VIMBUNDLE)/vim-markdown
