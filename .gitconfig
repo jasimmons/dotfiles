@@ -1,0 +1,14 @@
+[user]
+  name = Jason Simmons
+  email = 1382389+jasimmons@users.noreply.github.com
+[alias]
+  st = status -s
+  lg = log --pretty=oneline --graph --decorate
+  b = branch
+  co = checkout
+  p = pull
+  pu = push
+  forget = "!git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done"
+  shove = "!git push --set-upstream origin `git rev-parse --abbrev-ref HEAD`"
+  rps = rev-parse --short HEAD
+  dad = "!curl https://icanhazdadjoke.com/ && echo"
